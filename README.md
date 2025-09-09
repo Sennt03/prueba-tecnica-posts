@@ -78,3 +78,10 @@ La aplicación debe ser responsiva y funcionar correctamente en dispositivos mó
 
 - [ ] Implementación de internacionalización (i18n).
 - [ ] Cobertura de pruebas unitarias (al menos 80%).
+
+## Enviar la prueba al correo
+
+- desarrollo@abitmedia.cloud
+- cc: gerencia@abitmedia.cloud
+- asunto: Prueba Técnica Frontend - [Tu Nombre]
+- adjuntar el link del repositorio
