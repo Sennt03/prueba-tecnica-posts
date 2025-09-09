@@ -41,7 +41,7 @@ Se debe entregar la prueba 3 días posterior a la recepción de la misma.
 
 Se requiere desarrollar una aplicación web que permita a los usuarios:
 
-- Reguistrarse y autenticarse.
+- Registrarse y autenticarse.
 - Crear, leer, actualizar y eliminar (CRUD) posts.
 - Comentar en los posts.
 
@@ -59,7 +59,6 @@ La aplicación debe ser responsiva y funcionar correctamente en dispositivos mó
 - Instrucciones claras para ejecutar la aplicación.
 - Levantar en un contenedor Docker utilizando Docker Compose.
 - Documentación breve del proyecto (Estructura, componentes principales).
-- Pruebas unitarias y de integración (al menos 2 componentes y un servicio).
 
 **Nota:** Incluir en el repositorio el archivo `prueba.jar` para facilitar la ejecución de la aplicación.
 
@@ -78,4 +77,4 @@ La aplicación debe ser responsiva y funcionar correctamente en dispositivos mó
 ### Plus
 
 - [ ] Implementación de internacionalización (i18n).
-- [ ] Cobertura de pruebas (al menos 80%).
+- [ ] Cobertura de pruebas unitarias (al menos 80%).
