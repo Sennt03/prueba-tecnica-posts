@@ -1,0 +1,27 @@
+.auth-layout {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: url("/assets/fondo_auth.jpg") no-repeat center center/cover;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, rgba(15,18,28,0.95) 50%, rgba(15,18,28,0.7) 100%);
+  z-index: 0;
+}
+
+.auth-content {
+  position: relative;
+  z-index: 1;
+  margin-left: 5%;
+  width: 450px;
+  padding: 40px;
+  color: #fff;
+}

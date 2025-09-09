@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.auth-layout {
+    .header h2 {
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .header p {
+        margin: 10px 0 30px;
+        font-size: 14px;
+        color: #bbb;
+    }
+
+    .header p a {
+        color: #4da6ff;
+        text-decoration: none;
+    }
+
+    // Inputs
+    .form-group {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 12px 40px 12px 15px;
+        border: none;
+        border-radius: 12px;
+        background: #1f2535;
+        color: #fff;
+        font-size: 14px;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    .form-group input:focus {
+        background: #2a3248;
+        box-shadow: 0 0 0 2px #4da6ff;
+    }
+
+    .form-group i {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #aaa;
+    }
+
+    // Botones
+    .btns {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .btn {
+        flex: 1;
+        padding: 12px;
+        border: none;
+        border-radius: 12px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn-cancel {
+        background: #2a3248;
+        color: #fff;
+    }
+
+    .btn-cancel:hover {
+        background: #353f57;
+    }
+
+    .btn-create {
+        background: #4da6ff;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .btn-create:hover {
+        background: #3691eb;
+    }
+
+}

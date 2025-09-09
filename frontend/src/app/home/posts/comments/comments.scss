@@ -1,0 +1,45 @@
+.comments {
+  margin-top: 10px;
+}
+
+.comment {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+// Ocultar comentarios extra por defecto
+.more-comments {
+  display: none;
+}
+
+// Clase que se activa cuando se abren
+.comments.open .more-comments {
+  display: block;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.toggle-comments {
+  background: none;
+  border: none;
+  color: #4facfe;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 5px;
+  transition: color 0.3s;
+}
+
+.toggle-comments:hover {
+  color: #82c0ff;
+}
+
+// Animación suave
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,4 +1,1 @@
-.idea/
-.vscode/
-data/
-**.pdf
+*/node_modules
