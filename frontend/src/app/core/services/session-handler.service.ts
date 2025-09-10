@@ -18,7 +18,8 @@ export const sessionHandlerInterceptor: HttpInterceptorFn = (req, next) => {
   return next(req).pipe(
     catchError((error: HttpErrorResponse) => {
       if (error.status === 401) {
-        toastr.error('Sesión caducada!', '');
+        const text = $localize`:@@session_message:Sesión caducada!`;
+        toastr.error(text, '');
         authService.logout().subscribe()
         router.navigate(['/auth']);
       }

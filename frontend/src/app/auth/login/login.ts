@@ -43,7 +43,6 @@ export class Login {
     this.maskLoad.set(true)
     this.authService.login(this.form.value).subscribe({
       next: (res) => {
-        toastr.success('Bienvenido!', '')
         this.maskLoad.set(false)
         this.authService.saveAuth(res)
         this.form.markAsUntouched()
@@ -53,7 +52,7 @@ export class Login {
         this.maskLoad.set(false)
         toastr.setOption('timeOut', 3000)
         if (window.innerWidth < 768) toastr.setOption('positionClass', 'toast-top-center')
-        toastr.error(err.error.message, 'Login fallido')
+        toastr.error(err.error.message, '')
         toastr.setDefaultsOptions()
       }
     })

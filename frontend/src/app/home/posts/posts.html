@@ -16,7 +16,7 @@
     </div>
   } 
   @if(!loading() && posts().length <= 0) { 
-    <div class="noItems">No hay posts creados. <br>¡Crea uno!</div>
+    <div class="noItems" i18n="@@no-posts">No hay posts creados. <br>¡Crea uno!</div>
   }
 </div>
 
@@ -24,5 +24,5 @@
 <app-confirm-dialog 
       #dialogDelete
       (accepted)="onAcceptDelete()"
-      text="¿Estás seguro de eliminar este post?">
+      [text]="textDeleteConfirm">
     </app-confirm-dialog>

@@ -29,20 +29,26 @@ export class Comments {
   idComment = 0
   edit = false
 
+  // INTERCIONALIZACION
+  textDeleteConfirm = $localize`:@@delete_confirm_message:¿Estás seguro de eliminar este comentario?`;
+
   toggleComments(el: HTMLElement, btn: HTMLButtonElement, load = false){
     // this.loading.set(true)
-    btn.textContent = 'Cargando...'
+    const text = $localize`:@@error-message-loading:Cargando...`
+    btn.textContent = text
 
     const idPost = this.id() as number
     this.postService.getById(idPost).subscribe({
       next: res => {
-        // this.loading.set(false)
-        const text = el.classList.contains('open') && !load ? 'Ver mas' : 'Cerrar'
-        
+        const text = el.classList.contains('open')
+          ? $localize`:@@error-message-see-more:Ver mas`
+          : $localize`:@@error-message-close:Cerrar`
+
         if(load) el.classList.add('open')
         else if(res.data.comments.length > 0) el.classList.toggle('open') 
         else{
-          btn.textContent = 'No hay comentarios! - Click para recargar'
+          const text = $localize`:@@error-message-nohas:No hay comentarios! - Click para recargar`
+          btn.textContent = text
           return
         }
 
@@ -64,11 +70,13 @@ export class Comments {
       next: res => {
         this.loading.set(false)
         this.toggleComments(el, btn, true)
-        toastr.success('Comentario añadido!', '')
+        const text = $localize`:@@error-message-added:Comentario añadido!`
+        toastr.success(text, '')
       },
       error: err => {
         this.loading.set(false)
-        toastr.error('Error al crear el comentario!', '')
+        const text = $localize`:@@error-message-created-error:Error al crear el comentario!`
+        toastr.error(text, '')
       }
     })
   }
@@ -91,12 +99,14 @@ export class Comments {
 
         this.loading.set(false)
         this.idComment = 0
-        toastr.success('Comentario eliminado correctamente', '')
+        const text = $localize`:@@error-message-eliminated:Comentario eliminado correctamente!`
+        toastr.success(text, '')
         
       },
       error: err => {
         this.loading.set(false)
-        toastr.error('Error al eliminar!', '')
+        const text = $localize`:@@error-message-error-to-elim:Error al eliminar!`
+        toastr.error(text, '')
       }
     })
   }
@@ -122,12 +132,14 @@ export class Comments {
         this.idComment = 0;
         this.edit = false;
         this.loading.set(false)
-        toastr.success('Comentario editado!', '')
+        const text = $localize`:@@error-message:Comentario editado!`
+        toastr.success(text, '')
         
       },
       error: err => {
         this.loading.set(false)
-        toastr.error('Error al editar el comentario!', '')
+        const text = $localize`:@@error-message:Error al editar el comentario!`
+        toastr.error(text, '')
       }
     })
   }

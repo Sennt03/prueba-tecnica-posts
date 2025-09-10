@@ -28,6 +28,15 @@ export class NewPost implements OnInit{
 
   helperForm = () => createFormHelper(this.form)
 
+  // INTERCIONALIZACION
+  getTitle = () => this.edit()
+      ? $localize`:@@edit_post_title:Editar post`
+      : $localize`:@@create_post_title:Crea un post`;
+  
+  getTextBtn = () => this.edit()
+    ? $localize`:@@edit_post_title:Editar`
+    : $localize`:@@create_post_title:Publicar Post`;
+
 
   constructor(){
     this.buildForm()
@@ -57,7 +66,10 @@ export class NewPost implements OnInit{
         this.maskLoad.set(false)
         this.form.patchValue(post.data);
       },
-      error: err => this.myErrorHandler(err, 'Fallo al cargar el post!')
+      error: err => {
+        const text = $localize`:@@error-message:Fallo al cargar el post!`
+        this.myErrorHandler(err, text)
+      }
     });
   }
 
@@ -75,17 +87,22 @@ export class NewPost implements OnInit{
     ? this.postService.update(this.form.value, postId)
     : this.postService.create(this.form.value)
 
-    const initText = this.edit() ? 'Editado' : 'Creado'
-    const initText2 = this.edit() ? 'editar' : 'crear'
+    const initText = this.edit() 
+      ? $localize`:@@error-message:Editado correctamente!` 
+      : $localize`:@@error-message:Creado correctamente!` 
+    
+    const initText2 = this.edit() 
+      ? $localize`:@@error-message:Fallo al editar!`
+      : $localize`:@@error-message:Fallo al crear!`
 
     sub.subscribe({
       next: (res: any) => {
-        toastr.success(initText + ' correctamente!', '')
+        toastr.success(initText, '')
         this.maskLoad.set(false)
         this.form.markAsUntouched()
         this.router.navigate(['/'])
       },
-      error: err => this.myErrorHandler(err, `Fallo al ${initText2}!`)
+      error: err => this.myErrorHandler(err, initText2)
     })
   }
 

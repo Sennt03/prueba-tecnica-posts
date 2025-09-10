@@ -28,6 +28,9 @@
             ],
             "styles": [
               "src/styles.scss"
+            ],
+            "polyfills": [
+              "@angular/localize/init"
             ]
           },
           "configurations": {
@@ -50,6 +53,12 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "fr": {
+              "localize": ["fr"]
+            },
+            "en": {
+              "localize": ["en"]
             }
           },
           "defaultConfiguration": "production"
@@ -66,6 +75,12 @@
             },
             "development": {
               "buildTarget": "frontend:build:development"
+            },
+            "fr": {
+              "buildTarget": "frontend:build:fr"
+            },
+            "en": {
+              "buildTarget": "frontend:build:en"
             }
           },
           "defaultConfiguration": "development"
@@ -86,8 +101,18 @@
             ],
             "styles": [
               "src/styles.scss"
+            ],
+            "polyfills": [
+              "@angular/localize/init"
             ]
           }
+        }
+      },
+      "i18n": {
+        "sourceLocale": "es",
+        "locales": {
+          "en": "src/locale/messages.en.xlf",
+          "fr": "src/locale/messages.fr.xlf"
         }
       }
     }

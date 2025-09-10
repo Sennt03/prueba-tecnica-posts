@@ -16,6 +16,10 @@ export class InputTextDialog {
 
   submitted = output<string>();
 
+  getText = () => this.edit() 
+    ? $localize`:@@error-message:Edita el comentario`
+    : $localize`:@@error-message:Ingresa un comentario`
+
   open(content = '') {
     this.edit.set(content != '')
     this.userInput.set(content);

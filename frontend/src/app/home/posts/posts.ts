@@ -25,6 +25,9 @@ export class Posts {
   loading = signal(true)
   idPost = 0
 
+  // INTERCIONALIZACION
+  textDeleteConfirm = $localize`:@@delete_confirm_message_post:¿Estás seguro de eliminar este post?`;
+
   constructor(){
     this.loadPosts()
   }
@@ -49,7 +52,8 @@ export class Posts {
     this.postService.delete(this.idPost).subscribe({
       next: res => {
         this.loading.set(false)
-        toastr.success('Post eliminado correctamente', '')
+        const text = $localize`:@@error-message_success:Post eliminado correctamente!`
+        toastr.success(text, '')
         
         this.posts.update(posts => posts.filter(post => post.id != this.idPost))
       }

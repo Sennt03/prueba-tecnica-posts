@@ -1,40 +1,41 @@
 <div class="content">
   <div class="create-post">
-    <h2><i class="fa-solid fa-pen-to-square"></i> {{ edit() ? 'Editar post' : 'Crea un post'}}</h2>
+    <h2><i class="fa-solid fa-pen-to-square"></i> {{ getTitle() }}</h2>
     <form [formGroup]="form" (ngSubmit)="sendPost()">
       <div class="form-group">
-        <label for="title">Título</label>
-        <input type="text" id="title" placeholder="Ingresa un título" formControlName="title" />
+        <label for="title" i18n="@@title-new">Título</label>
+        <input type="text" id="title" placeholder="Ingresa un título" formControlName="title" i18n-placeholder="@@title_placeholder" />
       </div>
 
       @if(helperForm().haveErrors('title')){
       <div class="div-error">
         @if(helperForm().hasError('title', 'minlength')){
-        <div>*debe tener mínimo 3 letras</div>
+        <div i18n="@@validation-new">*debe tener mínimo 3 letras</div>
         }@else if(helperForm().hasError('title', 'required')){
-        <div>*requerido</div>
+        <div i18n="@@validation-new-required">*requerido</div>
         }
       </div>
       }
 
       <div class="form-group">
-        <label for="content">Contenido</label>
+        <label for="content" i18n>Contenido</label>
         <textarea
           id="content"
           placeholder="Escribe tu post..."
           formControlName="content"
+          i18n-placeholder="@@content_placeholder"
         ></textarea>
       </div>
       @if(helperForm().haveErrors('content')){
       <div class="div-error">
         @if(helperForm().hasError('content', 'minlength')){
-        <div>*contenido con mínimo 20 letras</div>
+        <div i18n="@@validation-new-min-20">*contenido con mínimo 20 letras</div>
         }@else if(helperForm().hasError('content', 'required')){
-        <div>*requerido</div>
+        <div i18n="@@validation-new-min-required">*requerido</div>
         }
       </div>
       }
-      <button type="submit"><i class="fa-solid fa-plus"></i> {{ edit() ? 'Editar' : 'Publicar Post' }}</button>
+      <button type="submit"><i class="fa-solid fa-plus"></i> {{ getTextBtn() }}</button>
     </form>
   </div>
 </div>

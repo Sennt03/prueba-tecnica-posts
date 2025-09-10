@@ -1,11 +1,11 @@
 <div class="comments" #container>
   <!-- Primer comentario visible siempre -->
   <div class="comment">
-    <span>
+    <span i18n="@@comments-comp">
       <i class="fas fa-comment"></i> Comentarios...
     </span>
 
-    <span class="add-comment" (click)="dialog.open()">
+    <span class="add-comment" (click)="dialog.open()" i18n="@@comentar">
       <i class="fas fa-plus"></i>
       comentar
     </span>
@@ -30,7 +30,7 @@
   </div>
 
   <!-- Botón toggle -->
-  <button class="toggle-comments" (click)="toggleComments(container, btnVermas)" #btnVermas>Ver más</button>
+  <button class="toggle-comments" (click)="toggleComments(container, btnVermas)" #btnVermas i18n="@@see-more-comment">Ver más</button>
 </div>
 
 <app-loading [show]="loading()"></app-loading>
@@ -42,5 +42,5 @@
 <app-confirm-dialog 
       #dialogDelete
       (accepted)="onAcceptDelete()"
-      text="¿Estás seguro de eliminar este comentario?">
+      [text]="textDeleteConfirm">
     </app-confirm-dialog>

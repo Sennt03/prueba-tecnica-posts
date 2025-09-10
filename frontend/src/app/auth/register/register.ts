@@ -50,7 +50,7 @@ export class Register {
     this.maskLoad.set(true)
     this.authService.register(this.form.value).subscribe({
       next: (res: any) => {
-        toastr.success('Registrado correctamente!', '')
+        toastr.success(res.message, '')
         this.maskLoad.set(false)
         // this.authService.saveAuth(res)
         this.form.markAsUntouched()
@@ -60,7 +60,7 @@ export class Register {
         this.maskLoad.set(false)
         toastr.setOption('timeOut', 3000)
         if (window.innerWidth < 768) toastr.setOption('positionClass', 'toast-top-center')
-        toastr.error(err.error.message, 'Registro fallido')
+        toastr.error(err.error.message, '')
         toastr.setDefaultsOptions()
       }
     })

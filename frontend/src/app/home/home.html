@@ -1,10 +1,10 @@
 <div class="home">
   <nav>
-    <h1><i class="fas fa-feather-alt"></i> David Ruiz - Prueba Técnica</h1>
+    <h1 i18n="@@name-and-message"><i class="fas fa-feather-alt"></i> David Ruiz - Prueba Técnica</h1>
     <div class="menu">
-      <a routerLink="/"><i class="fas fa-home"></i> Inicio</a>
-      <a routerLink="/create"><i class="fas fa-plus"></i> Nuevo Post</a>
-      <a (click)="logout()"><i class="fa-solid fa-right-from-bracket"></i> Salir</a>
+      <a routerLink="/" i18n="@@inicio-text"><i class="fas fa-home"></i> Inicio</a>
+      <a routerLink="/create" i18n="@@new-post"><i class="fas fa-plus"></i> Nuevo Post</a>
+      <a (click)="logout()" i18n="@@logout-btn"><i class="fa-solid fa-right-from-bracket"></i> Salir</a>
     </div>
   </nav>
 

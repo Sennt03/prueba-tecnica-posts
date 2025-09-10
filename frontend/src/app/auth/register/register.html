@@ -1,52 +1,52 @@
 <div class="header animate__animated animate__fadeInDown">
-  <h2>Crea una cuenta<span style="color:#4da6ff;">.</span></h2>
-  <p>Ya estas registrado? <a routerLink="../login">Inicia sesión</a></p>
+  <h2 i18n>Crea una cuenta<span style="color:#4da6ff;">.</span></h2>
+  <p i18n>Ya estas registrado? <a routerLink="../login" >Inicia sesión</a></p>
 </div>
 
 <form class="animate__animated animate__fadeInUp" [formGroup]="form" (ngSubmit)="register()">
   <div class="form-group">
-    <input type="email" placeholder="Email" formControlName="username">
+    <input type="email" placeholder="Email" formControlName="username" i18n-placeholder="@@email_placeholder">
     <i class="fa-solid fa-envelope"></i>
   </div>
   @if (helperForm().haveErrors('username')) {
     <div class="div-error">
       @if (helperForm().hasError('username', 'email')) {
-      <div>*ingrese un email valido</div>
+      <div i18n>*ingrese un email valido</div>
       } @if (helperForm().hasError('username', 'required')) {
-      <div>*requerido</div>
+      <div i18n>*requerido</div>
       }
     </div>
   }
   <div class="form-group">
-    <input type="password" placeholder="Contraseña" formControlName="password" #password1>
+    <input type="password" placeholder="Contraseña" formControlName="password" #password1 i18n-placeholder="@@password_placeholder">
     <i class="icon-password fa-regular fa-eye" #passwordIcon1 (click)="togglePasswordVisibility(passwordIcon1, password1)"></i>
   </div>
   @if(helperForm().haveErrors('password')){
     <div class="div-error">
       @if(helperForm().hasError('password', 'minlength')){
-          <div>*debe tener mínimo 8 letras</div>
+          <div i18n>*debe tener mínimo 8 letras</div>
       }@else if(helperForm().hasError('password', 'pattern')){
-          <div>*contraseña muy debil</div>
+          <div i18n>*contraseña muy debil</div>
       }@else if(helperForm().hasError('password', 'required')){
-          <div>*requerido</div>
+          <div i18n>*requerido</div>
       }
     </div>
   }
 
   <div class="form-group">
-    <input type="password" placeholder="Confirmar contraseña" formControlName="confirmPassword" #password2>
+    <input type="password" placeholder="Confirmar contraseña" formControlName="confirmPassword" #password2 i18n-placeholder="@@password_confirm_placeholder">
     <i class="icon-password fa-regular fa-eye" #passwordIcon2 (click)="togglePasswordVisibility(passwordIcon2, password2)"></i>
   </div>
   @if(form.get('confirmPassword')?.touched && form.errors &&
     form.hasError('match_password')){
     <div class="div-error">
-      <div>*contraseñas no coinciden</div>
+      <div i18n>*contraseñas no coinciden</div>
     </div>
   }
 
   <div class="btns">
-    <button type="button" class="btn btn-cancel" routerLink="../login">Cancelar</button>
-    <button type="submit" class="btn btn-create">Crear cuenta</button>
+    <button type="button" class="btn btn-cancel" routerLink="../login" i18n>Cancelar</button>
+    <button type="submit" class="btn btn-create" i18n="@@signup-button">Crear cuenta</button>
   </div>
 </form>
 

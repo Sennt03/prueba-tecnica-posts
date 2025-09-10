@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="es" target-language="fr" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="welcome-message" datatype="html">
+        <source>Bienvenido<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;color:#4da6ff;&quot;&gt;"/>.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>Bienvenue<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;color:#4da6ff;&quot;&gt;"/>.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2065427432632614852" datatype="html">
+        <source>No tienes una cuenta? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;../register&quot;&gt;"/>Registrarme<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target>Vous n'avez pas de compte ? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;../register&quot;&gt;"/>S'inscrire<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email_placeholder" datatype="html">
+        <source>Email</source>
+        <target>Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1657815804634722910" datatype="html">
+        <source>*ingrese un email válido</source>
+        <target>*entrez un e-mail valide</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8384731355291308188" datatype="html">
+        <source>*requerido</source>
+        <target>*obligatoire</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="password_placeholder" datatype="html">
+        <source>Contraseña</source>
+        <target>Mot de passe</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3004137441971567595" datatype="html">
+        <source>*mínimo 8 caracteres</source>
+        <target>*minimum 8 caractères</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login-button" datatype="html">
+        <source>Iniciar sesión</source>
+        <target>Se connecter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.html</context>
+          <context context-type="linenumber">36,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6927003436505343304" datatype="html">
+        <source>Crea una cuenta<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;color:#4da6ff;&quot;&gt;"/>.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>Créez un compte<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;color:#4da6ff;&quot;&gt;"/>.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4818344208681998219" datatype="html">
+        <source>Ya estas registrado? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;../login&quot; &gt;"/>Inicia sesión<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target>Déjà inscrit ? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;../login&quot; &gt;"/>Se connecter<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3128238035327207344" datatype="html">
+        <source>*ingrese un email valido</source>
+        <target>*entrez un e-mail valide</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8314266224977626736" datatype="html">
+        <source>*debe tener mínimo 8 letras</source>
+        <target>*doit contenir au moins 8 caractères</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8988403371435354454" datatype="html">
+        <source>*contraseña muy debil</source>
+        <target>*mot de passe trop faible</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="password_confirm_placeholder" datatype="html">
+        <source>Confirmar contraseña</source>
+        <target>Confirmer le mot de passe</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1912817849872270521" datatype="html">
+        <source>*contraseñas no coinciden</source>
+        <target>*les mots de passe ne correspondent pas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.html</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6402951927316857780" datatype="html">
+        <source>Cancelar</source>
+        <target>Annuler</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.html</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/input-text-dialog/input-text-dialog.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="signup-button" datatype="html">
+        <source>Crear cuenta</source>
+        <target>Créer un compte</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.html</context>
+          <context context-type="linenumber">49,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="session_message" datatype="html">
+        <source>Sesión caducada!</source>
+        <target>Session expirée !</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/services/session-handler.service.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="name-and-message" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fas fa-feather-alt&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> David Ruiz - Prueba Técnica</source>
+        <target><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fas fa-feather-alt&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> David Ruiz - Test technique</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicio-text" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fas fa-home&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Inicio</source>
+        <target><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fas fa-home&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Accueil</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="new-post" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fas fa-plus&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Nuevo Post</source>
+        <target><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fas fa-plus&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Nouvelle publication</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="logout-btn" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-solid fa-right-from-bracket&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Salir</source>
+        <target><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-solid fa-right-from-bracket&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Se déconnecter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="title-new" datatype="html">
+        <source>Título</source>
+        <target>Titre</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/new-post/new-post.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="title_placeholder" datatype="html">
+        <source>Ingresa un título</source>
+        <target>Entrez un titre</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/new-post/new-post.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="validation-new" datatype="html">
+        <source>*debe tener mínimo 3 letras</source>
+        <target>*doit contenir au moins 3 caractères</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/new-post/new-post.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="validation-new-required" datatype="html">
+        <source>*requerido</source>
+        <target>*obligatoire</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/new-post/new-post.html</context>
+          <context context-type="linenumber">15,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5990722728973226850" datatype="html">
+        <source>Contenido</source>
+        <target>Contenu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/new-post/new-post.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="content_placeholder" datatype="html">
+        <source>Escribe tu post...</source>
+        <target>Écrivez votre publication...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/new-post/new-post.html</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="validation-new-min-20" datatype="html">
+        <source>*contenido con mínimo 20 letras</source>
+        <target>*contenu d'au moins 20 caractères</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/new-post/new-post.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="validation-new-min-required" datatype="html">
+        <source>*requerido</source>
+        <target>*obligatoire</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/new-post/new-post.html</context>
+          <context context-type="linenumber">34,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="edit_post_title" datatype="html">
+        <source>Editar post</source>
+        <target>Modifier la publication</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="create_post_title" datatype="html">
+        <source>Crea un post</source>
+        <target>Créez une publication</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error-message" datatype="html">
+        <source>Fallo al cargar el post!</source>
+        <target>Échec du chargement de la publication !</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/posts/comments/comments.ts</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/posts/comments/comments.ts</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/input-text-dialog/input-text-dialog.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/input-text-dialog/input-text-dialog.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="comments-comp" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fas fa-comment&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Comentarios... </source>
+        <target><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fas fa-comment&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Commentaires... </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/posts/comments/comments.html</context>
+          <context context-type="linenumber">5,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="comentar" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fas fa-plus&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> comentar </source>
+        <target><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fas fa-plus&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> commenter </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/posts/comments/comments.html</context>
+          <context context-type="linenumber">9,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="see-more-comment" datatype="html">
+        <source>Ver más</source>
+        <target>Voir plus</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/posts/comments/comments.html</context>
+          <context context-type="linenumber">33,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="delete_confirm_message" datatype="html">
+        <source>¿Estás seguro de eliminar este comentario?</source>
+        <target>Êtes-vous sûr de vouloir supprimer ce commentaire ?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/posts/comments/comments.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error-message-loading" datatype="html">
+        <source>Cargando...</source>
+        <target>Chargement...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/posts/comments/comments.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error-message-see-more" datatype="html">
+        <source>Ver mas</source>
+        <target>Voir plus</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/posts/comments/comments.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error-message-close" datatype="html">
+        <source>Cerrar</source>
+        <target>Fermer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/posts/comments/comments.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error-message-nohas" datatype="html">
+        <source>No hay comentarios! - Click para recargar</source>
+        <target>Aucun commentaire ! - Cliquez pour recharger</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/posts/comments/comments.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error-message-added" datatype="html">
+        <source>Comentario añadido!</source>
+        <target>Commentaire ajouté !</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/posts/comments/comments.ts</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error-message-created-error" datatype="html">
+        <source>Error al crear el comentario!</source>
+        <target>Erreur lors de la création du commentaire !</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/posts/comments/comments.ts</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error-message-eliminated" datatype="html">
+        <source>Comentario eliminado correctamente!</source>
+        <target>Commentaire supprimé avec succès !</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/posts/comments/comments.ts</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error-message-error-to-elim" datatype="html">
+        <source>Error al eliminar!</source>
+        <target>Erreur lors de la suppression !</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/posts/comments/comments.ts</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="no-posts" datatype="html">
+        <source>No hay posts creados. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>¡Crea uno!</source>
+        <target>Aucune publication créée. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>Créez-en une !</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/posts/posts.html</context>
+          <context context-type="linenumber">19,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="delete_confirm_message_post" datatype="html">
+        <source>¿Estás seguro de eliminar este post?</source>
+        <target>Êtes-vous sûr de vouloir supprimer cette publication ?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/posts/posts.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error-message_success" datatype="html">
+        <source>Post eliminado correctamente!</source>
+        <target>Publication supprimée avec succès !</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/posts/posts.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8160064196607463772" datatype="html">
+        <source>Por favor escribe lo que deseas:</source>
+        <target>Veuillez écrire ce que vous souhaitez :</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/input-text-dialog/input-text-dialog.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="message_input_placeholder" datatype="html">
+        <source>Escribe aquí...</source>
+        <target>Écrivez ici...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/input-text-dialog/input-text-dialog.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3905178848571662288" datatype="html">
+        <source>Aceptar</source>
+        <target>Accepter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/input-text-dialog/input-text-dialog.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
