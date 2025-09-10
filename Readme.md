@@ -51,11 +51,15 @@ cd prueba-tecnica-posts
 
 Asegúrate de tener Docker instalado y en ejecución:
 ### Con Docker Compose
+```bash
 docker compose up --build
+```
 
 ### Manual (Sin Docker Composer)
+```bash
 docker build -t prueba-frontend .
 docker run --name prueba-frontend -p 8080:8080 -p 4201:4201 -p 4202:4202 -p 4203:4203 prueba-frontend
+```
 
 Backend → http://localhost:8080
 Frontend → http://localhost:4201 -> es
