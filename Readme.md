@@ -9,22 +9,22 @@ Se han aplicado varias prácticas modernas de Angular y arquitectura limpia:
 - **Angular 20 Signals + Zoneless**: Configurada sin `zone.js`, usando **signals** para la detección de cambios.
 - **Internacionalización (i18n)**: Configurada en modo desarrollo, levantando un `ng serve` por idioma (`es`, `en`, `fr`).  
 - **Proxy Angular**: Debido a limitaciones del backend (CORS), se utiliza un **proxy de Angular** (`frontend/proxy-conf.json` y configurado en `angular.json`) para redirigir las peticiones.
-- **Arquitectura por features**:
-  - `features/` → Módulos principales como `home` y `auth`.  
-  - `core/` → Servicios, modelos y lógica central.  
-  - `shared/` → Componentes reutilizables, pipes, directivas y utilidades.  
+- **Short Imports**: Configuración en `tsconfig.json` para importar con alias (`@services/...`) en lugar de rutas relativas largas. 
 - **Interceptors**:
   - `AuthInterceptor` → Adjunta automáticamente el token en cada petición.  
   - `SessionHandlerInterceptor` → Maneja el estado de sesión; si el backend responde `401`, se cierra la sesión.  
 - **Autenticación**:
   - Formularios **reactivos** con validaciones instantáneas, grupales y personalizadas para login y registro.  
+- **Arquitectura por features**:
+  - `features/` → Módulos principales como `home` y `auth`.  
+  - `core/` → Servicios, modelos y lógica central.  
+  - `shared/` → Componentes reutilizables, pipes, directivas y utilidades.  
 - **Utilidades y componentes reutilizables**:
   - `shared/utils/toastr.ts` → Configuración tipada para usar `toastr` fácilmente en Angular.  
   - `shared/components/loading/` → Componente de máscara de carga controlado por un **signal**, utilizable globalmente.  
 - **Tipado estricto en servicios**:  
   - Todos los modelos (`core/models`) tipan las peticiones y respuestas, asegurando autocompletado y seguridad en tiempo de desarrollo.  
-- **Lazy Loading**: Configuración de módulos bajo demanda para mejorar rendimiento.  
-- **Short Imports**: Configuración en `tsconfig.json` para importar con alias (`@services/...`) en lugar de rutas relativas largas.  
+- **Lazy Loading**: Configuración de módulos bajo demanda para mejorar rendimiento.   
 - **UI/UX**: Diseño simple, limpio y funcional, con enfoque en responsividad y usabilidad.  
 
 La entrega incluye un **Dockerfile unificado**, que levanta tanto el backend como el frontend en un solo contenedor, simplificando la ejecución.
