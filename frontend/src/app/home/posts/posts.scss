@@ -36,6 +36,12 @@
   gap: 8px;
 }
 
+.post-title{
+  margin-top: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .post-actions button {
   background: none;
   border: none;
@@ -54,6 +60,12 @@
   margin: 15px 0;
   font-size: 15px;
   line-height: 1.5;
+}
+
+.noItems{
+  color: #ffff;
+  position: relative;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {

@@ -8,7 +8,7 @@
   },
   "include": [
     "src/**/*.ts"
-  ],
+, "src/app/shared/utils/myErrorHandler"  ],
   "exclude": [
     "src/**/*.spec.ts"
   ]

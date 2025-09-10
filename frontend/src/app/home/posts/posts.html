@@ -1,47 +1,21 @@
 <div class="container">
-  <div class="post">
-    <div class="post-header">
-      <h2><i class="fas fa-user-circle"></i> Usuario</h2>
-      <div class="post-actions">
-        <button><i class="fas fa-edit"></i></button>
-        <button><i class="fas fa-trash-alt"></i></button>
+  @for (item of posts(); track item.id) {
+    <div class="post">
+      <div class="post-header">
+        <h2><i class="fas fa-user-circle"></i> {{ item.authorUsername }}</h2>
+        <div class="post-actions">
+          <button><i class="fas fa-edit"></i></button>
+          <button (click)="deletePost(item.id)"><i class="fas fa-trash-alt"></i></button>
+        </div>
       </div>
+      <div class="post-title">{{ item.title }}</div>
+      <div class="post-content">{{ item.content }}</div>
+      <app-comments [id]="item.id"></app-comments>
     </div>
-    <div class="post-content">Aquí va el contenido del post. Lorem ipsum dolor sit amet.</div>
-    <app-comments></app-comments>
-  </div>
-
-  <div class="post">
-    <div class="post-header">
-      <h2><i class="fas fa-user-circle"></i> Usuario</h2>
-      <div class="post-actions">
-        <button><i class="fas fa-edit"></i></button>
-        <button><i class="fas fa-trash-alt"></i></button>
-      </div>
-    </div>
-    <div class="post-content">Aquí va el contenido del post. Lorem ipsum dolor sit amet.</div>
-    <app-comments></app-comments>
-  </div>
-  <div class="post">
-    <div class="post-header">
-      <h2><i class="fas fa-user-circle"></i> Usuario</h2>
-      <div class="post-actions">
-        <button><i class="fas fa-edit"></i></button>
-        <button><i class="fas fa-trash-alt"></i></button>
-      </div>
-    </div>
-    <div class="post-content">Aquí va el contenido del post. Lorem ipsum dolor sit amet.</div>
-    <app-comments></app-comments>
-  </div>
-  <div class="post">
-    <div class="post-header">
-      <h2><i class="fas fa-user-circle"></i> Usuario</h2>
-      <div class="post-actions">
-        <button><i class="fas fa-edit"></i></button>
-        <button><i class="fas fa-trash-alt"></i></button>
-      </div>
-    </div>
-    <div class="post-content">Aquí va el contenido del post. Lorem ipsum dolor sit amet.</div>
-    <app-comments></app-comments>
-  </div>
+  } 
+  @if(!loading() && posts().length <= 0) { 
+    <div class="noItems">No se encontraron elementos.</div>
+  }
 </div>
+
+<app-loading [show]="loading()"></app-loading>

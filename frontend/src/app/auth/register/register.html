@@ -3,25 +3,51 @@
   <p>Ya estas registrado? <a routerLink="../login">Inicia sesión</a></p>
 </div>
 
-<form class="animate__animated animate__fadeInUp">
+<form class="animate__animated animate__fadeInUp" [formGroup]="form" (ngSubmit)="register()">
   <div class="form-group">
-    <input type="text" placeholder="Nombre">
-    <i class="fa-solid fa-user"></i>
-  </div>
-  <div class="form-group">
-    <input type="text" placeholder="Apellido">
-    <i class="fa-solid fa-id-card"></i>
-  </div>
-  <div class="form-group">
-    <input type="email" placeholder="Email">
+    <input type="email" placeholder="Email" formControlName="username">
     <i class="fa-solid fa-envelope"></i>
   </div>
+  @if (helperForm().haveErrors('username')) {
+    <div class="div-error">
+      @if (helperForm().hasError('username', 'email')) {
+      <div>*ingrese un email valido</div>
+      } @if (helperForm().hasError('username', 'required')) {
+      <div>*requerido</div>
+      }
+    </div>
+  }
   <div class="form-group">
-    <input type="password" placeholder="Contraseña">
-    <i class="fa-solid fa-lock"></i>
+    <input type="password" placeholder="Contraseña" formControlName="password" #password1>
+    <i class="icon-password fa-regular fa-eye" #passwordIcon1 (click)="togglePasswordVisibility(passwordIcon1, password1)"></i>
   </div>
+  @if(helperForm().haveErrors('password')){
+    <div class="div-error">
+      @if(helperForm().hasError('password', 'minlength')){
+          <div>*debe tener mínimo 8 letras</div>
+      }@else if(helperForm().hasError('password', 'pattern')){
+          <div>*contraseña muy debil</div>
+      }@else if(helperForm().hasError('password', 'required')){
+          <div>*requerido</div>
+      }
+    </div>
+  }
+
+  <div class="form-group">
+    <input type="password" placeholder="Confirmar contraseña" formControlName="confirmPassword" #password2>
+    <i class="icon-password fa-regular fa-eye" #passwordIcon2 (click)="togglePasswordVisibility(passwordIcon2, password2)"></i>
+  </div>
+  @if(form.get('confirmPassword')?.touched && form.errors &&
+    form.hasError('match_password')){
+    <div class="div-error">
+      <div>*contraseñas no coinciden</div>
+    </div>
+  }
+
   <div class="btns">
     <button type="button" class="btn btn-cancel" routerLink="../login">Cancelar</button>
     <button type="submit" class="btn btn-create">Crear cuenta</button>
   </div>
 </form>
+
+<app-loading [show]="maskLoad()"></app-loading>

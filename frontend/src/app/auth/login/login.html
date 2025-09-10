@@ -3,16 +3,38 @@
   <p>No tienes una cuenta? <a routerLink="../register">Registrarme</a></p>
 </div>
 
-<form class="animate__animated animate__fadeInUp">
+<form class="animate__animated animate__fadeInUp" [formGroup]="form" (ngSubmit)="login()">
   <div class="form-group">
-    <input type="email" placeholder="Email">
+    <input type="email" placeholder="Email" formControlName="username">
     <i class="fa-solid fa-envelope"></i>
   </div>
+  @if (helperForm().haveErrors('username')) {
+    <div class="div-error">
+      @if (helperForm().hasError('username', 'email')) {
+      <div>*ingrese un email válido</div>
+      } @if (helperForm().hasError('username', 'required')) {
+      <div>*requerido</div>
+      }
+    </div>
+  }
+
   <div class="form-group">
-    <input type="password" placeholder="Contraseña">
-    <i class="fa-solid fa-lock"></i>
+    <input type="password" placeholder="Contraseña" #password1 formControlName="password">
+    <i class="icon-password fa-regular fa-eye" #passwordIcon1 (click)="togglePasswordVisibility(passwordIcon1, password1)"></i>
   </div>
+  @if(helperForm().haveErrors('password')){
+    <div class="div-error">
+      @if(helperForm().hasError('password', 'minlength')){
+          <div>*mínimo 8 caracteres</div>
+      }@else if(helperForm().hasError('password', 'required')){
+          <div>*requerido</div>
+      }
+    </div>
+  }
+
   <div class="btns">
     <button type="submit" class="btn btn-create">Iniciar sesión</button>
   </div>
 </form>
+
+<app-loading [show]="maskLoad()"></app-loading>
