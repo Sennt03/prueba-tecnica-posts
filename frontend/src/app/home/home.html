@@ -5,10 +5,21 @@
       <a routerLink="/" i18n="@@inicio-text"><i class="fas fa-home"></i> Inicio</a>
       <a routerLink="/create" i18n="@@new-post"><i class="fas fa-plus"></i> Nuevo Post</a>
       <a (click)="logout()" i18n="@@logout-btn"><i class="fa-solid fa-right-from-bracket"></i> Salir</a>
+      
+      <div class="lang-select">
+        <select [(ngModel)]="currentLang" (ngModelChange)="changeLang()">
+          <option value="es">🇪🇸 Español</option>
+          <option value="en">🇬🇧 English</option>
+          <option value="fr">🇫🇷 Français</option>
+        </select>
+      </div>
     </div>
+
   </nav>
 
   <div class="layout-container">
     <router-outlet></router-outlet>
   </div>
 </div>
+
+<app-loading [show]="maskLoad()"></app-loading>

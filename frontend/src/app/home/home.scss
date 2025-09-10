@@ -20,7 +20,7 @@
 
 // Navbar
 nav {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -59,7 +59,32 @@ nav a:hover {
   color: #4facfe;
 }
 
+.lang-select {
+  margin-left: 15px;
+}
+
+.lang-select select {
+  background: rgba(20, 24, 38, 0.9);
+  color: #fff;
+  border: 1px solid #4facfe;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.lang-select select:hover {
+  background: rgba(31, 36, 55, 0.95);
+}
+
+.lang-select select option {
+  background: #141826;
+  color: #fff;
+}
+
 // Responsive menú
+/* Responsive menú mejorado */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -67,14 +92,38 @@ nav a:hover {
     padding: 15px 20px;
   }
 
+  nav h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
   nav .menu {
     flex-direction: column;
-    gap: 15px;
-    margin-top: 10px;
+    gap: 10px;
     width: 100%;
   }
 
   nav a {
     font-size: 16px;
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  nav a:hover {
+    color: #fff;
+    background: #4facfe33; /* leve fondo al pasar */
+  }
+
+  .lang-select {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .lang-select select {
+    width: 100%;
+    font-size: 16px;
+    padding: 8px 10px;
   }
 }

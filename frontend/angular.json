@@ -54,11 +54,16 @@
               "extractLicenses": false,
               "sourceMap": true
             },
+            "es": {
+              "outputPath": "dist/frontend"
+            },
             "fr": {
-              "localize": ["fr"]
+              "localize": ["fr"],
+              "outputPath": "dist/frontend-fr"
             },
             "en": {
-              "localize": ["en"]
+              "localize": ["en"],
+              "outputPath": "dist/frontend-en"
             }
           },
           "defaultConfiguration": "production"

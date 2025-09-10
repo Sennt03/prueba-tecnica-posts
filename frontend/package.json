@@ -6,7 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "start:es": "ng serve --port 4201",
+    "start:en": "ng serve --configuration=en --port 4202",
+    "start:fr": "ng serve --configuration=fr --port 4203",
+    "start:angular": "concurrently \"npm run start:es\" \"npm run start:en\" \"npm run start:fr\""
   },
   "prettier": {
     "printWidth": 100,
@@ -37,6 +41,7 @@
     "@angular/compiler-cli": "^20.2.0",
     "@angular/localize": "^20.2.4",
     "@types/jasmine": "~5.1.0",
+    "concurrently": "^9.2.1",
     "jasmine-core": "~5.9.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",

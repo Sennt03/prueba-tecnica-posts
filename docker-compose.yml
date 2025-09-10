@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: prueba-frontend
+    ports:
+      - "8080:8080"   # Backend
+      - "4201:4201"   # Frontend ES
+      - "4202:4202"   # Frontend EN
+      - "4203:4203"   # Frontend FR
+    restart: unless-stopped
