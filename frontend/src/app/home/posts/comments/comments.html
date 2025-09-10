@@ -1,11 +1,31 @@
 <div class="comments" #container>
   <!-- Primer comentario visible siempre -->
-  <div class="comment"><i class="fas fa-comment"></i> Comentarios...</div>
+  <div class="comment">
+    <span>
+      <i class="fas fa-comment"></i> Comentarios...
+    </span>
+
+    <span class="add-comment" (click)="dialog.open()">
+      <i class="fas fa-plus"></i>
+      comentar
+    </span>
+  </div>
 
   <!-- Contenedor de más comentarios -->
   <div class="more-comments">
     @for(comment of post()?.data?.comments; track comment.id){
-      <div class="comment"><i class="fas fa-comment"></i> {{ comment.content }}</div>
+      <div class="comment">
+        <span class="overflow-wrap">
+          <i class="fas fa-comment"></i> {{ comment.content }}
+        </span>
+
+        @if(user.username == comment.authorUsername){
+          <span class="btns-actions">
+            <button (click)="editComment(comment.id, comment.content, dialog)"><i class="fas fa-edit"></i></button>
+            <button (click)="deleteComment(comment.id, dialogDelete)"><i class="fas fa-trash-alt"></i></button>
+          </span>
+        }
+      </div>
     }
   </div>
 
@@ -14,3 +34,13 @@
 </div>
 
 <app-loading [show]="loading()"></app-loading>
+<app-input-text-dialog
+#dialog
+(submitted)="onComment($event, container, btnVermas)"
+></app-input-text-dialog>
+
+<app-confirm-dialog 
+      #dialogDelete
+      (accepted)="onAcceptDelete()"
+      text="¿Estás seguro de eliminar este comentario?">
+    </app-confirm-dialog>

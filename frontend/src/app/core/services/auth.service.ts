@@ -4,7 +4,7 @@ import { noInterceptToken } from './token.service';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { LsLogin, LsRegister, LsResAuth } from '@models/auth.models';
+import { LsLogin, LsRegister, LsResAuth, LsUser, UserDefault } from '@models/auth.models';
 
 @Injectable({
   providedIn: 'root'
@@ -37,6 +37,15 @@ export class AuthService {
     }catch{
       this.logout()
       return false
+    }
+  }
+  
+  getUser(): LsUser{
+    try{
+      return JSON.parse((localStorage.getItem('auth') as string))
+    }catch{
+      this.logout()
+      return UserDefault
     }
   }
 

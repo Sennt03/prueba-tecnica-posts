@@ -14,6 +14,10 @@ export const HomeRoutes: Routes = [
                 path: 'create',
                 loadComponent: () => import('./new-post/new-post').then(c => c.NewPost)
             },
+            {
+                path: 'update/:id',
+                loadComponent: () => import('./new-post/new-post').then(c => c.NewPost)
+            },
         ]
     }
 ]

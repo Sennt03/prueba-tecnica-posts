@@ -1,3 +1,4 @@
+// MODELOS PARA TIPAR LAS PETICIONES DE LOS SERVICIOS
 export interface LsPost{
     title: string,
     content: string

@@ -1,3 +1,4 @@
+// MODELOS PARA TIPAR LAS PETICIONES DE LOS SERVICIOS
 export interface LsRegister{
     username: string,
     password: string
@@ -16,3 +17,11 @@ export interface LsResAuth{
     },
     message: string
 }
+
+export interface LsUser{
+    username: string
+    token: string
+    expiresIn: number
+}
+
+export const UserDefault: LsUser = {token: '', username: '', expiresIn: 0}

@@ -1,6 +1,6 @@
 <div class="content">
   <div class="create-post">
-    <h2><i class="fa-solid fa-pen-to-square"></i> Crea un post</h2>
+    <h2><i class="fa-solid fa-pen-to-square"></i> {{ edit() ? 'Editar post' : 'Crea un post'}}</h2>
     <form [formGroup]="form" (ngSubmit)="sendPost()">
       <div class="form-group">
         <label for="title">Título</label>
@@ -34,7 +34,7 @@
         }
       </div>
       }
-      <button type="submit"><i class="fa-solid fa-plus"></i> Publicar Post</button>
+      <button type="submit"><i class="fa-solid fa-plus"></i> {{ edit() ? 'Editar' : 'Publicar Post' }}</button>
     </form>
   </div>
 </div>

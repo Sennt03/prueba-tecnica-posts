@@ -4,8 +4,10 @@
       <div class="post-header">
         <h2><i class="fas fa-user-circle"></i> {{ item.authorUsername }}</h2>
         <div class="post-actions">
-          <button><i class="fas fa-edit"></i></button>
-          <button (click)="deletePost(item.id)"><i class="fas fa-trash-alt"></i></button>
+          @if(user.username == item.authorUsername){
+            <button routerLink="/update/{{ item.id }}" routerLinkActive="router-link-active" ><i class="fas fa-edit"></i></button>
+            <button (click)="deletePost(item.id, dialogDelete)"><i class="fas fa-trash-alt"></i></button>
+          }
         </div>
       </div>
       <div class="post-title">{{ item.title }}</div>
@@ -14,8 +16,13 @@
     </div>
   } 
   @if(!loading() && posts().length <= 0) { 
-    <div class="noItems">No se encontraron elementos.</div>
+    <div class="noItems">No hay posts creados. <br>¡Crea uno!</div>
   }
 </div>
 
 <app-loading [show]="loading()"></app-loading>
+<app-confirm-dialog 
+      #dialogDelete
+      (accepted)="onAcceptDelete()"
+      text="¿Estás seguro de eliminar este post?">
+    </app-confirm-dialog>

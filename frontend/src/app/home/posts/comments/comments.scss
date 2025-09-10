@@ -13,12 +13,19 @@
   gap: 8px;
 }
 
-// Ocultar comentarios extra por defecto
+.add-comment{
+  margin-left: auto;
+  font-size: 13px;
+  background: #848484;
+  padding: 1px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 .more-comments {
   display: none;
 }
 
-// Clase que se activa cuando se abren
 .comments.open .more-comments {
   display: block;
   animation: fadeIn 0.3s ease-in;
@@ -38,7 +45,22 @@
   color: #82c0ff;
 }
 
-// Animación suave
+.btns-actions{
+  margin-left: auto;
+}
+
+.btns-actions button{
+  font-size: 13px;
+  background: #848484;
+  padding: 3px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  margin: 3px 2px;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-5px); }
   to { opacity: 1; transform: translateY(0); }
