@@ -24,7 +24,7 @@ Se han aplicado varias prácticas modernas de Angular y arquitectura limpia:
   - `shared/components/loading/` → Componente de máscara de carga controlado por un **signal**, utilizable globalmente.  
 - **Tipado estricto en servicios**:  
   - Todos los modelos (`core/models`) tipan las peticiones y respuestas, asegurando autocompletado y seguridad en tiempo de desarrollo.  
-- **Lazy Loading**: Configuración de módulos bajo demanda para mejorar rendimiento.   
+- **Lazy Loading**: Configuración de módulos bajo demanda para mejorar rendimiento (Junto con estrategia de precarga).   
 - **UI/UX**: Diseño simple, limpio y funcional, con enfoque en responsividad y usabilidad.  
 
 La entrega incluye un **Dockerfile unificado**, que levanta tanto el backend como el frontend en un solo contenedor, simplificando la ejecución.
