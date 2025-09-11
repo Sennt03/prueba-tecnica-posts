@@ -76,7 +76,11 @@ Esto se debe a que el backend entregado presenta problemas de CORS, lo que impid
 En un entorno sin esta limitación, lo ideal sería generar los builds de cada idioma y servirlos desde un servidor o proxy inverso (Node.js, Nginx o Apache), redirigiendo las rutas /es, /en y /fr a sus respectivas carpetas de compilación (dist/es, dist/en, dist/fr).
 
 ## Ejecutar los test
-Para ejecutar los text asegurate de estar dentro de la carpeta frontend
+Para ejecutar los text asegurate de tener:
+- node v22+ instalado
+- npm 10.9.3+
+
+Ubicate dentro de la carpeta frontend y ejecuta:
 
 ```bash
 npm i
