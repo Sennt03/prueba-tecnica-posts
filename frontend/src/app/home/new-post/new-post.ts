@@ -88,12 +88,12 @@ export class NewPost implements OnInit{
     : this.postService.create(this.form.value)
 
     const initText = this.edit() 
-      ? $localize`:@@error-message:Editado correctamente!` 
-      : $localize`:@@error-message:Creado correctamente!` 
+      ? $localize`:@@error-message-edit-c:Editado correctamente!` 
+      : $localize`:@@error-message-created-c:Creado correctamente!` 
     
     const initText2 = this.edit() 
-      ? $localize`:@@error-message:Fallo al editar!`
-      : $localize`:@@error-message:Fallo al crear!`
+      ? $localize`:@@error-message-edit-b:Fallo al editar!`
+      : $localize`:@@error-message-create-b:Fallo al crear!`
 
     sub.subscribe({
       next: (res: any) => {

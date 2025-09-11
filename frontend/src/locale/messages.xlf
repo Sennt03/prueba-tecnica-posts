@@ -78,6 +78,24 @@
           <context context-type="linenumber">36,38</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="login-succes-a" datatype="html">
+        <source>Bienvenido!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login-err-b" datatype="html">
+        <source>Credenciales inválidas!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="6927003436505343304" datatype="html">
         <source>Crea una cuenta<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span style=&quot;color:#4da6ff;&quot;&gt;"/>.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
         <context-group purpose="location">
@@ -143,6 +161,24 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/register/register.html</context>
           <context context-type="linenumber">49,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registe-success-b" datatype="html">
+        <source>Registrado correctamente!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register-err-b" datatype="html">
+        <source>El correo ya esta registrado!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.ts</context>
+          <context context-type="linenumber">67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="session_message" datatype="html">
@@ -265,22 +301,6 @@
           <context context-type="linenumber">70</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
-          <context context-type="linenumber">91</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
-          <context context-type="linenumber">92</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
-          <context context-type="linenumber">95</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
-          <context context-type="linenumber">96</context>
-        </context-group>
-        <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/posts/comments/comments.ts</context>
           <context context-type="linenumber">135</context>
         </context-group>
@@ -288,13 +308,33 @@
           <context context-type="sourcefile">src/app/home/posts/comments/comments.ts</context>
           <context context-type="linenumber">141</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="error-message-edit-c" datatype="html">
+        <source>Editado correctamente!</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/input-text-dialog/input-text-dialog.ts</context>
-          <context context-type="linenumber">20</context>
+          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
+          <context context-type="linenumber">91</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="error-message-created-c" datatype="html">
+        <source>Creado correctamente!</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/input-text-dialog/input-text-dialog.ts</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error-message-edit-b" datatype="html">
+        <source>Fallo al editar!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error-message-create-b" datatype="html">
+        <source>Fallo al crear!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
+          <context context-type="linenumber">96</context>
         </context-group>
       </trans-unit>
       <trans-unit id="comments-comp" datatype="html">
@@ -402,11 +442,18 @@
           <context context-type="linenumber">55</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8160064196607463772" datatype="html">
+      <trans-unit id="confirm_component_shared" datatype="html">
+        <source>Confirmación</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/confirm-dialog/confirm-dialog.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="message_write_you_want" datatype="html">
         <source>Por favor escribe lo que deseas:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/input-text-dialog/input-text-dialog.html</context>
-          <context context-type="linenumber">5,7</context>
+          <context context-type="linenumber">5,8</context>
         </context-group>
       </trans-unit>
       <trans-unit id="message_input_placeholder" datatype="html">
@@ -421,6 +468,20 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/input-text-dialog/input-text-dialog.html</context>
           <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="edit-message-input-d" datatype="html">
+        <source>Edita el comentario</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/input-text-dialog/input-text-dialog.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="create-message-input-d" datatype="html">
+        <source>Ingresa un comentario</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/input-text-dialog/input-text-dialog.ts</context>
+          <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
     </body>

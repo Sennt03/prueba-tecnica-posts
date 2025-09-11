@@ -50,7 +50,9 @@ export class Register {
     this.maskLoad.set(true)
     this.authService.register(this.form.value).subscribe({
       next: (res: any) => {
-        toastr.success(res.message, '')
+        const text = $localize`:@@registe-success-b:Registrado correctamente!`
+        // toastr.success(res.message, '')
+        toastr.success(text, '')
         this.maskLoad.set(false)
         // this.authService.saveAuth(res)
         this.form.markAsUntouched()
@@ -60,7 +62,12 @@ export class Register {
         this.maskLoad.set(false)
         toastr.setOption('timeOut', 3000)
         if (window.innerWidth < 768) toastr.setOption('positionClass', 'toast-top-center')
-        toastr.error(err.error.message, '')
+        const text = err.status == 409 
+          ? $localize`:@@register-err-b:El correo ya esta registrado!`
+          : $localize`:@@register-err-b:Error al registrar!`
+          
+        // toastr.error(err.error.message, '')
+        toastr.error(text, '')
         toastr.setDefaultsOptions()
       }
     })

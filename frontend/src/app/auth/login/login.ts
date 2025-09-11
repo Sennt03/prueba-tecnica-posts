@@ -46,13 +46,20 @@ export class Login {
         this.maskLoad.set(false)
         this.authService.saveAuth(res)
         this.form.markAsUntouched()
+        const text = $localize`:@@login-succes-a:Bienvenido!`
+        toastr.success(text, '')
+          
         this.router.navigate(['/'])
       },
       error: (err) => {
         this.maskLoad.set(false)
         toastr.setOption('timeOut', 3000)
         if (window.innerWidth < 768) toastr.setOption('positionClass', 'toast-top-center')
-        toastr.error(err.error.message, '')
+          const text = err.status == 401
+          ? $localize`:@@login-err-b:Credenciales inválidas!`
+          : $localize`:@@login-err-b:Error al iniciar sesión!`
+        // toastr.error(err.error.message, '')
+        toastr.error(text, '')
         toastr.setDefaultsOptions()
       }
     })

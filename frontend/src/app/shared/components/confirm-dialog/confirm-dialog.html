@@ -1,7 +1,7 @@
 @if (visible()) {
   <div class="overlay" (click)="cancel()">
     <div class="modal animate-in" (click)="$event.stopPropagation()">
-      <h2>Confirmación</h2>
+      <h2 i18n="@@confirm_component_shared">Confirmación</h2>
       <p>{{ text() }}</p>
       <div class="actions">
         <button class="btn accept" (click)="accept()">Aceptar</button>
