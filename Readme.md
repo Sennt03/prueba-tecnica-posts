@@ -26,6 +26,7 @@ Se han aplicado varias prácticas modernas de Angular y arquitectura limpia:
   - Todos los modelos (`core/models`) tipan las peticiones y respuestas, asegurando autocompletado y seguridad en tiempo de desarrollo.  
 - **Lazy Loading**: Configuración de módulos bajo demanda para mejorar rendimiento (Junto con estrategia de precarga).   
 - **UI/UX**: Diseño simple, limpio y funcional, con enfoque en responsividad y usabilidad.  
+- **Test**: Incluye la configuracion y algunos test unitarios.
 
 La entrega incluye un **Dockerfile unificado**, que levanta tanto el backend como el frontend en un solo contenedor, simplificando la ejecución.
 
@@ -68,9 +69,16 @@ Frontend → http://localhost:4201 -> es
            http://localhost:4203 -> fr
 
 
-
 ## Notas sobre internacionalización (i18n)
 
 En este proyecto cada idioma se levanta en un puerto distinto (ES: 4201, EN: 4202, FR: 4203).
 Esto se debe a que el backend entregado presenta problemas de CORS, lo que impide usar Angular en modo producción con ng build.
 En un entorno sin esta limitación, lo ideal sería generar los builds de cada idioma y servirlos desde un servidor o proxy inverso (Node.js, Nginx o Apache), redirigiendo las rutas /es, /en y /fr a sus respectivas carpetas de compilación (dist/es, dist/en, dist/fr).
+
+## Ejecutar los test
+Para ejecutar los text asegurate de estar dentro de la carpeta fronted
+
+```bash
+npm i
+ng test
+```
