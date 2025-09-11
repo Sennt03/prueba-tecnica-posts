@@ -80,7 +80,7 @@
       </trans-unit>
       <trans-unit id="login-button" datatype="html">
         <source>Iniciar sesión</source>
-        <target>Log in</target>
+        <target>Sign in</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/login/login.html</context>
           <context context-type="linenumber">36,38</context>
@@ -116,7 +116,7 @@
       </trans-unit>
       <trans-unit id="4818344208681998219" datatype="html">
         <source>Ya estas registrado? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;../login&quot; &gt;"/>Inicia sesión<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
-        <target>Already registered? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;../login&quot; &gt;"/>Log in<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+        <target>Already registered? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;../login&quot; &gt;"/>Sign in<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/register/register.html</context>
           <context context-type="linenumber">3,5</context>
@@ -192,7 +192,7 @@
       </trans-unit>
       <trans-unit id="register-err-b" datatype="html">
         <source>El correo ya esta registrado!</source>
-        <target>The email is already registered!</target>
+        <target>Email is already registered!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/register/register.ts</context>
           <context context-type="linenumber">66</context>
@@ -236,7 +236,7 @@
       </trans-unit>
       <trans-unit id="logout-btn" datatype="html">
         <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-solid fa-right-from-bracket&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Salir</source>
-        <target><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-solid fa-right-from-bracket&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Log out</target>
+        <target><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa-solid fa-right-from-bracket&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> Logout</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.html</context>
           <context context-type="linenumber">7,9</context>
@@ -396,7 +396,7 @@
       </trans-unit>
       <trans-unit id="see-more-comment" datatype="html">
         <source>Ver más</source>
-        <target>View more</target>
+        <target>See more</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/posts/comments/comments.html</context>
           <context context-type="linenumber">33,36</context>
@@ -420,7 +420,7 @@
       </trans-unit>
       <trans-unit id="error-message-see-more" datatype="html">
         <source>Ver mas</source>
-        <target>View more</target>
+        <target>See more</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/posts/comments/comments.ts</context>
           <context context-type="linenumber">44</context>
@@ -436,7 +436,7 @@
       </trans-unit>
       <trans-unit id="error-message-nohas" datatype="html">
         <source>No hay comentarios! - Click para recargar</source>
-        <target>No comments! - Click to reload</target>
+        <target>No comments! - Click to refresh</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/posts/comments/comments.ts</context>
           <context context-type="linenumber">50</context>
@@ -504,6 +504,22 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/confirm-dialog/confirm-dialog.html</context>
           <context context-type="linenumber">4,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="confirm_component_shared_accept" datatype="html">
+        <source>Aceptar</source>
+        <target>Accept</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/confirm-dialog/confirm-dialog.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="confirm_component_shared_cancel" datatype="html">
+        <source>Cancelar</source>
+        <target>Cancel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/confirm-dialog/confirm-dialog.html</context>
+          <context context-type="linenumber">8,11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="message_write_you_want" datatype="html">

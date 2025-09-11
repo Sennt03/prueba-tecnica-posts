@@ -449,6 +449,20 @@
           <context context-type="linenumber">4,6</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="confirm_component_shared_accept" datatype="html">
+        <source>Aceptar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/confirm-dialog/confirm-dialog.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="confirm_component_shared_cancel" datatype="html">
+        <source>Cancelar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/confirm-dialog/confirm-dialog.html</context>
+          <context context-type="linenumber">8,11</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="message_write_you_want" datatype="html">
         <source>Por favor escribe lo que deseas:</source>
         <context-group purpose="location">

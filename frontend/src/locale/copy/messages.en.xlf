@@ -80,10 +80,30 @@
       </trans-unit>
       <trans-unit id="login-button" datatype="html">
         <source>Iniciar sesión</source>
-        <target>Sign in</target>
+        <target>Log in</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/login/login.html</context>
           <context context-type="linenumber">36,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login-succes-a" datatype="html">
+        <source>Bienvenido!</source>
+        <target>Welcome!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login-err-b" datatype="html">
+        <source>Credenciales inválidas!</source>
+        <target>Invalid credentials!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.ts</context>
+          <context context-type="linenumber">60</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6927003436505343304" datatype="html">
@@ -96,7 +116,7 @@
       </trans-unit>
       <trans-unit id="4818344208681998219" datatype="html">
         <source>Ya estas registrado? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;../login&quot; &gt;"/>Inicia sesión<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
-        <target>Already registered? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;../login&quot; &gt;"/>Sign in<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+        <target>Already registered? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;../login&quot; &gt;"/>Log in<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/register/register.html</context>
           <context context-type="linenumber">3,5</context>
@@ -160,6 +180,26 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/register/register.html</context>
           <context context-type="linenumber">49,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registe-success-b" datatype="html">
+        <source>Registrado correctamente!</source>
+        <target>Registered successfully!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register-err-b" datatype="html">
+        <source>El correo ya esta registrado!</source>
+        <target>The email is already registered!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/register/register.ts</context>
+          <context context-type="linenumber">67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="session_message" datatype="html">
@@ -252,7 +292,7 @@
       </trans-unit>
       <trans-unit id="validation-new-min-20" datatype="html">
         <source>*contenido con mínimo 20 letras</source>
-        <target>*content with at least 20 characters</target>
+        <target>*content with minimum 20 characters</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/new-post/new-post.html</context>
           <context context-type="linenumber">32,33</context>
@@ -298,22 +338,6 @@
           <context context-type="linenumber">70</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
-          <context context-type="linenumber">91</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
-          <context context-type="linenumber">92</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
-          <context context-type="linenumber">95</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
-          <context context-type="linenumber">96</context>
-        </context-group>
-        <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/posts/comments/comments.ts</context>
           <context context-type="linenumber">135</context>
         </context-group>
@@ -321,13 +345,37 @@
           <context context-type="sourcefile">src/app/home/posts/comments/comments.ts</context>
           <context context-type="linenumber">141</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="error-message-edit-c" datatype="html">
+        <source>Editado correctamente!</source>
+        <target>Edited successfully!</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/input-text-dialog/input-text-dialog.ts</context>
-          <context context-type="linenumber">20</context>
+          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
+          <context context-type="linenumber">91</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="error-message-created-c" datatype="html">
+        <source>Creado correctamente!</source>
+        <target>Created successfully!</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/components/input-text-dialog/input-text-dialog.ts</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error-message-edit-b" datatype="html">
+        <source>Fallo al editar!</source>
+        <target>Failed to edit!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error-message-create-b" datatype="html">
+        <source>Fallo al crear!</source>
+        <target>Failed to create!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
+          <context context-type="linenumber">96</context>
         </context-group>
       </trans-unit>
       <trans-unit id="comments-comp" datatype="html">
@@ -348,7 +396,7 @@
       </trans-unit>
       <trans-unit id="see-more-comment" datatype="html">
         <source>Ver más</source>
-        <target>See more</target>
+        <target>View more</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/posts/comments/comments.html</context>
           <context context-type="linenumber">33,36</context>
@@ -372,7 +420,7 @@
       </trans-unit>
       <trans-unit id="error-message-see-more" datatype="html">
         <source>Ver mas</source>
-        <target>See more</target>
+        <target>View more</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/posts/comments/comments.ts</context>
           <context context-type="linenumber">44</context>
@@ -450,12 +498,20 @@
           <context context-type="linenumber">55</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8160064196607463772" datatype="html">
+      <trans-unit id="confirm_component_shared" datatype="html">
+        <source>Confirmación</source>
+        <target>Confirmation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/confirm-dialog/confirm-dialog.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="message_write_you_want" datatype="html">
         <source>Por favor escribe lo que deseas:</source>
         <target>Please write what you want:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/input-text-dialog/input-text-dialog.html</context>
-          <context context-type="linenumber">5,7</context>
+          <context context-type="linenumber">5,8</context>
         </context-group>
       </trans-unit>
       <trans-unit id="message_input_placeholder" datatype="html">
@@ -472,6 +528,22 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/input-text-dialog/input-text-dialog.html</context>
           <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="edit-message-input-d" datatype="html">
+        <source>Edita el comentario</source>
+        <target>Edit the comment</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/input-text-dialog/input-text-dialog.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="create-message-input-d" datatype="html">
+        <source>Ingresa un comentario</source>
+        <target>Enter a comment</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/input-text-dialog/input-text-dialog.ts</context>
+          <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
     </body>

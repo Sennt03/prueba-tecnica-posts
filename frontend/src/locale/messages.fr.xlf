@@ -32,7 +32,7 @@
       </trans-unit>
       <trans-unit id="1657815804634722910" datatype="html">
         <source>*ingrese un email válido</source>
-        <target>*saisir un e-mail valide</target>
+        <target>*entrez un e-mail valide</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/login/login.html</context>
           <context context-type="linenumber">14,15</context>
@@ -116,7 +116,7 @@
       </trans-unit>
       <trans-unit id="4818344208681998219" datatype="html">
         <source>Ya estas registrado? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;../login&quot; &gt;"/>Inicia sesión<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
-        <target>Déjà inscrit ? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;../login&quot; &gt;"/>Se connecter<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+        <target>Déjà inscrit ? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;../login&quot; &gt;"/>Connectez-vous<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/register/register.html</context>
           <context context-type="linenumber">3,5</context>
@@ -124,7 +124,7 @@
       </trans-unit>
       <trans-unit id="3128238035327207344" datatype="html">
         <source>*ingrese un email valido</source>
-        <target>*saisir un e-mail valide</target>
+        <target>*entrez un e-mail valide</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/register/register.html</context>
           <context context-type="linenumber">14,15</context>
@@ -192,7 +192,7 @@
       </trans-unit>
       <trans-unit id="register-err-b" datatype="html">
         <source>El correo ya esta registrado!</source>
-        <target>L'e-mail est déjà enregistré !</target>
+        <target>L'adresse e-mail est déjà enregistrée !</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/register/register.ts</context>
           <context context-type="linenumber">66</context>
@@ -252,7 +252,7 @@
       </trans-unit>
       <trans-unit id="title_placeholder" datatype="html">
         <source>Ingresa un título</source>
-        <target>Saisissez un titre</target>
+        <target>Entrez un titre</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/new-post/new-post.html</context>
           <context context-type="linenumber">7</context>
@@ -292,7 +292,7 @@
       </trans-unit>
       <trans-unit id="validation-new-min-20" datatype="html">
         <source>*contenido con mínimo 20 letras</source>
-        <target>*contenu avec au moins 20 caractères</target>
+        <target>*contenu d'au moins 20 caractères</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/new-post/new-post.html</context>
           <context context-type="linenumber">32,33</context>
@@ -332,7 +332,7 @@
       </trans-unit>
       <trans-unit id="error-message" datatype="html">
         <source>Fallo al cargar el post!</source>
-        <target>Échec lors du chargement du post !</target>
+        <target>Échec du chargement du post !</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
           <context context-type="linenumber">70</context>
@@ -364,7 +364,7 @@
       </trans-unit>
       <trans-unit id="error-message-edit-b" datatype="html">
         <source>Fallo al editar!</source>
-        <target>Échec lors de la modification !</target>
+        <target>Échec de la modification !</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
           <context context-type="linenumber">95</context>
@@ -372,7 +372,7 @@
       </trans-unit>
       <trans-unit id="error-message-create-b" datatype="html">
         <source>Fallo al crear!</source>
-        <target>Échec lors de la création !</target>
+        <target>Échec de la création !</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/new-post/new-post.ts</context>
           <context context-type="linenumber">96</context>
@@ -436,7 +436,7 @@
       </trans-unit>
       <trans-unit id="error-message-nohas" datatype="html">
         <source>No hay comentarios! - Click para recargar</source>
-        <target>Aucun commentaire ! - Cliquez pour recharger</target>
+        <target>Pas de commentaires ! - Cliquez pour recharger</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/posts/comments/comments.ts</context>
           <context context-type="linenumber">50</context>
@@ -506,6 +506,22 @@
           <context context-type="linenumber">4,6</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="confirm_component_shared_accept" datatype="html">
+        <source>Aceptar</source>
+        <target>Accepter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/confirm-dialog/confirm-dialog.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="confirm_component_shared_cancel" datatype="html">
+        <source>Cancelar</source>
+        <target>Annuler</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/confirm-dialog/confirm-dialog.html</context>
+          <context context-type="linenumber">8,11</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="message_write_you_want" datatype="html">
         <source>Por favor escribe lo que deseas:</source>
         <target>Veuillez écrire ce que vous souhaitez :</target>
@@ -532,7 +548,7 @@
       </trans-unit>
       <trans-unit id="edit-message-input-d" datatype="html">
         <source>Edita el comentario</source>
-        <target>Modifiez le commentaire</target>
+        <target>Modifier le commentaire</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/input-text-dialog/input-text-dialog.ts</context>
           <context context-type="linenumber">20</context>
@@ -540,7 +556,7 @@
       </trans-unit>
       <trans-unit id="create-message-input-d" datatype="html">
         <source>Ingresa un comentario</source>
-        <target>Saisissez un commentaire</target>
+        <target>Entrez un commentaire</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/input-text-dialog/input-text-dialog.ts</context>
           <context context-type="linenumber">21</context>
