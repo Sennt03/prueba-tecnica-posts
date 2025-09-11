@@ -63,7 +63,7 @@ export class Register {
         toastr.setOption('timeOut', 3000)
         if (window.innerWidth < 768) toastr.setOption('positionClass', 'toast-top-center')
         const text = err.status == 409 
-          ? $localize`:@@register-err-b:El correo ya esta registrado!`
+          ? $localize`:@@register-err-b:El correo ya esta registrado o contraseña no cumple requisitos de complejidad!`
           : $localize`:@@register-err-b:Error al registrar!`
           
         // toastr.error(err.error.message, '')

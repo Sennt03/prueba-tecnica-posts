@@ -191,8 +191,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="register-err-b" datatype="html">
-        <source>El correo ya esta registrado!</source>
-        <target>L'adresse e-mail est déjà enregistrée !</target>
+        <source>El correo ya esta registrado o contraseña no cumple requisitos de complejidad!</source>
+        <target>L'e-mail est déjà enregistré ou le mot de passe ne répond pas aux exigences de complexité. !</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/register/register.ts</context>
           <context context-type="linenumber">66</context>
