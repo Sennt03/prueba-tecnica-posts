@@ -77,6 +77,16 @@ Frontend → http://localhost:4201 -> es
            
            http://localhost:4203 -> fr
 
+Si quieres levantar unicamente el frontend sin docker:
+  1. Asegurate de tener Angular20, NodeJS y npm
+  2. Ejecutar script configurado en package.json
+```bash
+  cd frontend
+  npm i
+  npm run start:angular
+```
+Esto levantara la aplicación con un puerto para cada idioma.
+
 
 ## Notas sobre internacionalización (i18n)
 
@@ -84,8 +94,8 @@ En este proyecto cada idioma se levanta en un puerto distinto (ES: 4201, EN: 420
 Esto se debe a que el backend entregado presenta problemas de CORS, lo que impide usar Angular en modo producción con ng build.
 En un entorno sin esta limitación, lo ideal sería generar los builds de cada idioma y servirlos desde un servidor o proxy inverso (Node.js, Nginx o Apache), redirigiendo las rutas /es, /en y /fr a sus respectivas carpetas de compilación (dist/es, dist/en, dist/fr).
 
-# Ejecutar los test
-Para ejecutar los text asegurate de tener:
+# Ejecutar los tests
+Para ejecutar los tests asegurate de tener:
 - node v22+ instalado
 - npm 10.9.3+
 - @angular/cli 20+
@@ -97,7 +107,7 @@ npm i
 ng test
 ```
 
-Se encuentran realizados 88 test en total, todos pasados:
+Se encuentran realizados 88 tests en total, todos pasados:
 ```bash
 Executed 88 of 88 SUCCESS (1.169 secs / 1.003 secs)
 TOTAL: 88 SUCCESS
