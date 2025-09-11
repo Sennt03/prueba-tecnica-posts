@@ -56,6 +56,10 @@ export class Posts {
         toastr.success(text, '')
         
         this.posts.update(posts => posts.filter(post => post.id != this.idPost))
+      },
+      error: err => {
+        this.loading.set(false)
+        toastr.success(err?.message, '')
       }
     })
   }

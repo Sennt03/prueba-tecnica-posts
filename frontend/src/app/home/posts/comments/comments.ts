@@ -22,7 +22,7 @@ export class Comments {
   private authService = inject(AuthService)
   
   loading = signal(false)
-  id = input<number>()
+  id = input<number>(0)
   post = signal<LsGetPost | null>(null)
   
   user = this.authService.getUser()

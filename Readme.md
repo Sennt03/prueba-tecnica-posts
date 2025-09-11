@@ -8,6 +8,7 @@ Se han aplicado varias prácticas modernas de Angular y arquitectura limpia:
 
 - **Angular 20 Signals + Zoneless**: Configurada sin `zone.js`, usando **signals** para la detección de cambios.
 - **Internacionalización (i18n)**: Configurada en modo desarrollo, levantando un `ng serve` por idioma (`es`, `en`, `fr`).  
+- **Test**: Incluye la configuracion y test unitarios de todos los componentes, servicios, y guards.
 - **Proxy Angular**: Debido a limitaciones del backend (CORS), se utiliza un **proxy de Angular** (`frontend/proxy-conf.json` y configurado en `angular.json`) para redirigir las peticiones.
 - **Short Imports**: Configuración en `tsconfig.json` para importar con alias (`@services/...`) en lugar de rutas relativas largas. 
 - **Interceptors**:
@@ -26,7 +27,6 @@ Se han aplicado varias prácticas modernas de Angular y arquitectura limpia:
   - Todos los modelos (`core/models`) tipan las peticiones y respuestas, asegurando autocompletado y seguridad en tiempo de desarrollo.  
 - **Lazy Loading**: Configuración de módulos bajo demanda para mejorar rendimiento (Junto con estrategia de precarga).   
 - **UI/UX**: Diseño simple, limpio y funcional, con enfoque en responsividad y usabilidad.  
-- **Test**: Incluye la configuracion y algunos test unitarios.
 
 La entrega incluye un **Dockerfile unificado**, que levanta tanto el backend como el frontend en un solo contenedor, simplificando la ejecución.
 
@@ -56,6 +56,11 @@ Asegúrate de tener Docker instalado y en ejecución:
 docker compose up --build
 ```
 
+Si ya tienes la imagen construida (--build), solo ejecuta: 
+```bash
+docker compose up
+```
+
 ### O Manual (Sin Docker Composer)
 ```bash
 docker build -t prueba-frontend .
@@ -67,7 +72,9 @@ Listo! Con cualquier método de ejecución de Docker tendrás disponible:
 Backend → http://localhost:8080
 
 Frontend → http://localhost:4201 -> es
+           
            http://localhost:4202 -> en
+           
            http://localhost:4203 -> fr
 
 
@@ -77,7 +84,7 @@ En este proyecto cada idioma se levanta en un puerto distinto (ES: 4201, EN: 420
 Esto se debe a que el backend entregado presenta problemas de CORS, lo que impide usar Angular en modo producción con ng build.
 En un entorno sin esta limitación, lo ideal sería generar los builds de cada idioma y servirlos desde un servidor o proxy inverso (Node.js, Nginx o Apache), redirigiendo las rutas /es, /en y /fr a sus respectivas carpetas de compilación (dist/es, dist/en, dist/fr).
 
-## Ejecutar los test
+# Ejecutar los test
 Para ejecutar los text asegurate de tener:
 - node v22+ instalado
 - npm 10.9.3+
@@ -88,4 +95,10 @@ Ubicate dentro de la carpeta frontend y ejecuta:
 ```bash
 npm i
 ng test
+```
+
+Se encuentran realizados 88 test en total, todos pasados:
+```bash
+Executed 88 of 88 SUCCESS (1.169 secs / 1.003 secs)
+TOTAL: 88 SUCCESS
 ```

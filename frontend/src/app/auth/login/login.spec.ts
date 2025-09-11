@@ -22,7 +22,7 @@ describe('Login (unit tests)', () => {
     // Crear mocks espía para AuthService
     mockAuthService = {
       login: jasmine.createSpy('login'),
-      saveAuth: jasmine.createSpy('saveAuth')
+      saveAuth: jasmine.createSpy('saveAuth'),
     };
 
     // Spies para toastr
@@ -31,16 +31,9 @@ describe('Login (unit tests)', () => {
     spyOn(toastr, 'setDefaultsOptions').and.callThrough();
 
     TestBed.configureTestingModule({
-      imports: [
-        Login,
-        ReactiveFormsModule,
-        RouterTestingModule.withRoutes([])
-      ],
-      providers: [
-        { provide: AuthService, useValue: mockAuthService },
-        FormBuilder
-      ],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA]
+      imports: [Login, ReactiveFormsModule, RouterTestingModule.withRoutes([])],
+      providers: [{ provide: AuthService, useValue: mockAuthService }, FormBuilder],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
   }));
 
