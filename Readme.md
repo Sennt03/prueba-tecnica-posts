@@ -79,6 +79,7 @@ En un entorno sin esta limitación, lo ideal sería generar los builds de cada i
 Para ejecutar los text asegurate de tener:
 - node v22+ instalado
 - npm 10.9.3+
+- @angular/cli 20+
 
 Ubicate dentro de la carpeta frontend y ejecuta:
 
