@@ -77,7 +77,7 @@ Frontend → http://localhost:4201 -> es
            
            http://localhost:4203 -> fr
 
-Si quieres levantar unicamente el frontend sin docker:
+Si quieres levantar **unicamente el frontend** sin docker:
   1. Asegurate de tener Angular20, NodeJS y npm
   2. Ejecutar script configurado en package.json
 ```bash
