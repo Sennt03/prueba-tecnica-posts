@@ -1,4 +1,6 @@
-# Prueba Técnica Frontend - Abitmedia
+# Prueba Técnica Frontend
+
+## Es mi código público a una de las pruebas técnicas que he realizado
 
 ## Descripción del proyecto
 
