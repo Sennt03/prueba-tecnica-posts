@@ -1,4 +1,4 @@
-# PRUEBA TECNICA FRONTEND ABITMEDIA
+# PRUEBA TECNICA FRONTEND
 
 ## Instrucciones para ejecutar la aplicación
 
@@ -7,7 +7,6 @@ El proyecto se puede ejecutar utilizando Docker o directamente con Java si tiene
 1. Clonar el repositorio:
 
    ```bash
-   git clone https://github.com/Desarrollo2Abitmedia/prueba_tecnica_front.git
    cd prueba-tecnica-front
    ```
 
@@ -78,10 +77,3 @@ La aplicación debe ser responsiva y funcionar correctamente en dispositivos mó
 
 - [ ] Implementación de internacionalización (i18n).
 - [ ] Cobertura de pruebas unitarias (al menos 80%).
-
-## Enviar la prueba al correo
-
-- desarrollo@abitmedia.cloud
-- cc: gerencia@abitmedia.cloud
-- asunto: Prueba Técnica Frontend - [Tu Nombre]
-- adjuntar el link del repositorio
